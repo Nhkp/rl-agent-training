@@ -1,0 +1,8 @@
+experiment,total_timesteps,eval_episodes,mean_reward,std_reward,training_seconds,model_path,params
+baseline,250000,50,51.948915500000005,124.29924504287342,332.52,/home/nhkp/Documents/OpenClassroom/Projet_11/artifacts/mission/baseline.zip,{}
+learning_rate_1e_4,350000,50,6.45831848,101.92871846868671,425.67,/home/nhkp/Documents/OpenClassroom/Projet_11/artifacts/mission/learning_rate_1e_4.zip,{'learning_rate': 0.0001}
+gamma_0995,350000,50,232.54476182,52.12757554235522,407.21,/home/nhkp/Documents/OpenClassroom/Projet_11/artifacts/mission/gamma_0995.zip,{'gamma': 0.995}
+n_steps_2048,350000,50,2.4095195399999976,144.16694052751305,421.88,/home/nhkp/Documents/OpenClassroom/Projet_11/artifacts/mission/n_steps_2048.zip,{'n_steps': 2048}
+batch_size_128,350000,50,141.13281642,113.3476866747504,315.78,/home/nhkp/Documents/OpenClassroom/Projet_11/artifacts/mission/batch_size_128.zip,{'batch_size': 128}
+gae_lambda_098,350000,50,248.53800844,42.26107009918864,418.94,/home/nhkp/Documents/OpenClassroom/Projet_11/artifacts/mission/gae_lambda_098.zip,{'gae_lambda': 0.98}
+clip_range_01,350000,50,84.61086563999999,124.24640432556653,428.7,/home/nhkp/Documents/OpenClassroom/Projet_11/artifacts/mission/clip_range_01.zip,{'clip_range': 0.1}
