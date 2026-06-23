@@ -6,3 +6,4 @@ n_steps_2048,350000,50,2.4095195399999976,144.16694052751305,421.88,/home/nhkp/D
 batch_size_128,350000,50,141.13281642,113.3476866747504,315.78,/home/nhkp/Documents/OpenClassroom/Projet_11/artifacts/mission/batch_size_128.zip,{'batch_size': 128}
 gae_lambda_098,350000,50,248.53800844,42.26107009918864,418.94,/home/nhkp/Documents/OpenClassroom/Projet_11/artifacts/mission/gae_lambda_098.zip,{'gae_lambda': 0.98}
 clip_range_01,350000,50,84.61086563999999,124.24640432556653,428.7,/home/nhkp/Documents/OpenClassroom/Projet_11/artifacts/mission/clip_range_01.zip,{'clip_range': 0.1}
+final_best_100_episodes,,100,232.63,65.31,,/home/nhkp/Documents/OpenClassroom/Projet_11/artifacts/mission/best_lunarlander_ppo.zip,final evaluation of gae_lambda_098

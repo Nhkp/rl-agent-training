@@ -1,7 +1,7 @@
 [project]
 name = "projet-11"
 version = "0.1.0"
-description = "Add your description here"
+description = "Reinforcement learning autopilot for Gymnasium LunarLander with FastAPI and Streamlit deliverables"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

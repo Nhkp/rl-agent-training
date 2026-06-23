@@ -56,11 +56,20 @@ The experiment summary is stored in `artifacts/mission/results.csv`.
 ## Experiments and Results
 
 Several PPO configurations were trained and evaluated over 50 episodes. The best
-result in the current experiment table is:
+candidate in the experiment table is:
 
 | Experiment | Mean reward | Std reward | Total timesteps |
 | --- | ---: | ---: | ---: |
 | `gae_lambda_098` | 248.54 | 42.26 | 350,000 |
+
+The selected model was then evaluated again over the mission target of 100
+episodes:
+
+| Final model | Evaluation episodes | Mean reward | Std reward |
+| --- | ---: | ---: | ---: |
+| `best_lunarlander_ppo` | 100 | 232.63 | 65.31 |
+
+This final evaluation is above the mission threshold of 200 average reward.
 
 Full experiment summary:
 
@@ -73,6 +82,7 @@ Full experiment summary:
 | `batch_size_128` | 141.13 | 113.35 | `batch_size=128` |
 | `gae_lambda_098` | 248.54 | 42.26 | `gae_lambda=0.98` |
 | `clip_range_01` | 84.61 | 124.25 | `clip_range=0.1` |
+| `final_best_100_episodes` | 232.63 | 65.31 | final evaluation of the selected model |
 
 The strongest configuration improves both average reward and consistency. In
 practice, this means the trained policy is much more likely to complete a clean
@@ -157,6 +167,15 @@ uv run coverage-badge -o coverage.svg -f
 GitHub Actions runs the same checks on every push and pull request. The CI fails
 if tests fail, if coverage drops below 80%, or if the local coverage badge is not
 up to date.
+
+## Deliverables
+
+- Clean and commented mission notebook: `notebooks/mission.ipynb`.
+- Trained final PPO model: `artifacts/mission/best_lunarlander_ppo.zip`.
+- Successful landing video: `artifacts/mission/eagle1_landing.mp4`.
+- FastAPI source code: `src/projet_11/api.py`.
+- Streamlit GUI and dashboard: `src/projet_11/app.py`.
+- Experiment summary: `artifacts/mission/results.csv`.
 
 ## Limitations and Next Steps
 
