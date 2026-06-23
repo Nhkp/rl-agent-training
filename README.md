@@ -168,15 +168,6 @@ GitHub Actions runs the same checks on every push and pull request. The CI fails
 if tests fail, if coverage drops below 80%, or if the local coverage badge is not
 up to date.
 
-## Deliverables
-
-- Clean and commented mission notebook: `notebooks/mission.ipynb`.
-- Trained final PPO model: `artifacts/mission/best_lunarlander_ppo.zip`.
-- Successful landing video: `artifacts/mission/eagle1_landing.mp4`.
-- FastAPI source code: `src/projet_11/api.py`.
-- Streamlit GUI and dashboard: `src/projet_11/app.py`.
-- Experiment summary: `artifacts/mission/results.csv`.
-
 ## Limitations and Next Steps
 
 The current agent performs well in the evaluated setup, but the work could be
